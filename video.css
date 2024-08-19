@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    
+}
+body{
+    color: white;
+}
+header{
+    width: 100%;
+    height:7vh;
+    background: #212121;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+/* leftside of navbar */
+.nav-left{
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-left .box-menu{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* middle of the navbar */
+
+.nav-middle{
+    width: 500px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-middle .search-bar{
+    width: 85%;
+    height: 100%;
+    background: #303030;
+    display: flex;
+    align-items: center;
+}
+.nav-middle .search-bar input{
+    width: 85%;
+    height: 90%;
+    background: #000;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    color: white;
+}
+.nav-middle .search-bar .seach-icon{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+.nav-middle .search-mic{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+.nav-right{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-right>div{
+    font-size: 1.5rem;
+}
+.two-side-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    background: #000000ee;
+}
+
+
+.video-comment-container{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+}
+
+
+
+
+.other-related-videos{
+    width: 50%;
+}
+.video-container{
+    width: 80%;
+    height: 155px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.video-thumbnail{
+    height: 100%;
+    width: 40%;
+    object-fit: contain;
+    position: relative;
+}
+.duration-div{
+    position: absolute;
+    background: #000;
+    color: white;
+    bottom: 10px;
+    right: 5px;
+}
+.title-container{
+    width: 50%;
+    color: white;
+    margin-left: 10px;
+    position: relative;
+}
+.title-container>.video-name{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.title-container>div{
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.title-container>div>p{
+    font-size: 0.9rem;
+    font-weight: 100;
+   
+}
+.title-container>div>span{
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-right: 10px;
+  
+    
+}
+#video-player{
+    margin-top: 10px;
+    width: 90%;
+}
+.comment-Allcontainer {
+    
+    width: 90%;
+}
+.comment-Allcontainer .video-name{
+    margin-top: 20px;
+font-size: 1.5rem;
+}
+.comment-Allcontainer .view-count, .comment-Allcontainer .days{
+    display: inline-block;
+font-size: 0.8rem;
+margin-top:10px;
+}
+.stats{
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid white;
+}
+.stats>div>span{
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.channel-abouts{
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+.channel-abouts .channel-image{
+    margin-top: 10px;
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+.channel-abouts .channel-name{
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 100px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.channel-abouts .subscriber-count{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+  font-weight: 400;
+}
+.channel-abouts .subscribe{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 5px 15px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+.channel-description{
+    width: 80%;
+    margin-left: 100px;
+}
+.comment-container{
+    position: relative;
+    
+}
+.comment-container .comment-author{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-container .comment-author>img{
+    border-radius: 50%;
+}
+.comment-container .comment-author>span{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+.comment-container .comment-text{
+    margin-left: 60px;
+}
+.comment-container .comment-likes{
+    margin-top: 20px;
+    display: inline-block;
+}
+.reply-button{
+    display: inline-block;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+
+.reply-container{
+    background: #faf3f322;
+}
+.reply{
+position: relative;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+.reply-author{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+.reply-container .reply-author>img{
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.reply-container .reply-author>span{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+.reply-container .reply-text{
+    margin-left: 120px;
+}

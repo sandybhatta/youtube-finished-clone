@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="box-menu">
+                    <i class='bx bx-menu' style='color:#fffdfd' ></i>
+                </div>
+                <div class="ytlogo">
+                    <img src="./Youtube-Logo-white.png" alt="">
+                </div>
+            </div>
+            <div class="nav-middle">
+                <div class="search-bar">
+                     <input type="text" placeholder="Search" autocomplete="off"id="search-input" >
+                     <div class="seach-icon">
+                        <i class='bx bx-search' style='color:#fffdfd' ></i>
+                     </div>
+                    
+                </div>
+                    
+                
+                <div class="search-mic">
+                    <i class='bx bxs-microphone' style='color:#fffdfd' ></i>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="create">
+                    <i class='bx bx-video-plus'style='color:#fffdfd'></i>
+                </div>
+                <div class="grid">
+                    <i class='bx bx-grid' style='color:#fffdfd' ></i>
+                </div>
+                <div class="notification">
+                    <i class='bx bx-bell' style='color:#fffdfd' ></i>
+                </div>
+                <div class="profile-logo">
+                    <img src="Profile.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="two-side-container">
+    <div class="video-comment-container">
+    
+        <div id="video-player"></div>
+
+
+
+        <div class="comment-Allcontainer">
+            <p class="video-name"></p>
+            <span class="view-count"></span>
+            <span class="days"></span>
+            <div class="stats">
+                <div>
+                 <img src="YouTube UI Clone Design (Community)/navigation-icons svg/liked.svg" alt="">
+                <span class="like"></span>
+                </div>
+                
+                <div>
+                <img src="YouTube UI Clone Design (Community)/navigation-icons svg/Share.svg" alt="">
+                <span class="share">SHARE</span>
+                </div>
+
+                <div>
+                <img src="YouTube UI Clone Design (Community)/navigation-icons svg/Save.svg" alt="">
+                <span class="save">SAVE</span>
+                 </div>
+            </div>
+
+            <div class="channel-abouts">
+                <div class="channel-image"></div>
+                <h3 class="channel-name"></h3>
+                <span class="subscriber-count"></span>
+                <button class="subscribe">SUBSCRIBE</button>
+                <div class="channel-description"></div>
+            </div>
+            <!-- <div class="my-own-comments">
+                <img src="Profile.png" alt="">
+                <input type="text" placeholder="Add a   public comment">
+            </div> -->
+            <div class="public-comment-section">
+
+             </div>
+
+
+
+
+        </div>
+
+    </div>
+
+   <div class="other-related-videos"></div>
+</div>
+
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="videos.js"></script>
+</body>
+</html>

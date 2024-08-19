@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    
+}
+body{
+    color: white;
+    background: #000;
+}
+header{
+    width: 100%;
+    height:7vh;
+    background: #212121;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+/* leftside of navbar */
+.nav-left{
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-left .box-menu{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* middle of the navbar */
+
+.nav-middle{
+    width: 500px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-middle .search-bar{
+    width: 85%;
+    height: 100%;
+    background: #303030;
+    display: flex;
+    align-items: center;
+}
+.nav-middle .search-bar input{
+    width: 85%;
+    height: 90%;
+    background: #000;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    color: white;
+}
+.nav-middle .search-bar .seach-icon{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+.nav-middle .search-mic{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+.nav-right{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-right>div{
+    font-size: 1.5rem;
+}
+aside{
+    background: #212121;
+    width: 15vw;
+    position: relative;
+    padding-top: 10px;
+    
+}
+.home-section>div{
+    width:90% ;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+}
+aside .icon{
+    margin: 10px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+.icon img{
+   margin-right: 15px;
+   border-radius: 50%;
+}
+.icon span{
+   
+    font-size: 0.8rem;
+}
+ .highlight{
+    background: #ffffff21;
+    /* width: 100%; */
+}
+.subscriptions{
+     border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+}
+
+.subscriptions h4 , .more-from-yt h4{
+    
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 10px 15px 20px ;
+}
+.header-shower-item{
+    position: absolute;
+    top: 7vh;
+    left: 15vw;
+    height: 7vh;
+    background: #212121;
+    
+}
+.shower-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+   border-top: 1px solid rgba(255, 255, 255, 0.507) ;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.507) ;
+   
+}
+
+.item{
+    margin: 0 10px;
+    width:fit-content;
+    padding:2px 8px;
+    background: #7b707045;
+    border-radius: 9px;
+    text-align: center;
+    
+    border: 1px solid rgba(255, 255, 255, 0.288);
+}
+.item:nth-child(1){
+    color: #020202;
+    background: rgb(255, 255, 255);
+}
+#main-content{
+    position: absolute;
+    top: 14vh;
+    left: 15vw;
+    background: #000000;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.video-container{
+    height: 290px;
+    width: 310px;
+    background: #000;
+    margin: 20px 5px;
+    position: relative;
+}
+.thumbnail-container{
+    position: absolute;
+    top: -15px;
+    height: 70%;
+    width: 100%;
+    
+  
+}
+.thumbnail-img{
+    
+    height: 100%;
+    width: 100%;
+}
+.video-duration{
+    position: absolute;
+    width: fit-content;
+    background: #000;
+    bottom: 10%;
+    right: 5px;
+}
+.title-container{
+    position: absolute;
+    bottom:0%;
+    width: 100%;
+    height: 35%;
+   padding-top: 10px;
+    
+    
+}
+.channel-title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    /* margin: 5px 10px 5px; */
+    display: inline-block;
+    line-height: 15px;
+    padding-top: 5px;
+}
+.channel-img{
+    position: absolute;
+    /* top: 50%;
+    transform: translateY(-50%); */
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+
+.channel-title .title{
+    text-align: justify;
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    
+}
+.channel-title .veiwers-div{
+    position: absolute;
+    bottom: 0;
+}
+
+.channel-title .sec-title{
+    font-size: 0.65rem;
+    font-weight: 100;
+    margin-right: 10px;
+}
+.suggestion-container{
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    top: 8vh;
+    height: 550px;
+    width:400px ;
+    background: #020202d8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: space-around; */
+    
+}
+.input-suggestion{
+    margin: 5px 0;
+    width:100% ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+  
+}
